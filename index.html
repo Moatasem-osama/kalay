@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -18,31 +20,31 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section id="home">
-      <div class="home-text">
-        <h1>Hello , I'm Kalay</h1>
-        <p>
+    <main id="home">
+      <div class="home-text" >
+        <h1 data-aos="fade-up">Hello , I'm Kalay</h1>
+        <p data-aos="fade-up" data-aos-delay="100">
           Praesent eleifend tristique nisl, nec finibus urna posuere nec.
           Quisque vel nunc eget arcu maximus facilisis non eu nisi. Aliquam
           ullamcorper est a nisl imperdiet luctus.
         </p>
-        <button class="btn">Discover More</button>
+        <button data-aos="fade-up" data-aos-delay="300" class="btn">Discover More</button>
       </div>
-    </section>
+    </main>
     <section id="about" class="container gray">
-      <div class="about-title">
+      <div class="about-title" data-aos="zoom-in-up">
         <h2>What Things am i doing...</h2>
         <p>Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.</p>
       </div>
       <div class="about-cards">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <i class="fa-solid fa-face-smile"></i>
           <h3>graphic design</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing morbi venenatis.
           </p>
         </div>
-        <div class="card active">
+        <div class="card active" data-aos="fade-up" data-aos-delay="100">
           <i class="fa-solid fa-camera"></i>
           <h3>photography</h3>
           <p>
@@ -50,14 +52,14 @@
             pharetra risus vel.
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
           <i class="fa-solid fa-lightbulb"></i>
           <h3>graphic design</h3>
           <p>
             Sed tristique, nunc sit amet pellentesque pharetra, sapien urna.
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
           <i class="fa-solid fa-copy"></i>
           <h3>illustration</h3>
           <p>
@@ -69,10 +71,10 @@
     </section>
     <section id="blog" class="container">
       <div class="blog-flex">
-        <div class="img">
+        <div class="img" data-aos="fade-right">
           <img src="images/graphix.jpg" alt="" />
         </div>
-        <div class="blog-text">
+        <div class="blog-text" data-aos="fade-left">
           <h3>a little more about Kalay</h3>
           <span
             >Graphic Designer, Creative Photographer & Front-end Developer</span
@@ -87,7 +89,7 @@
           </p>
         </div>
       </div>
-      <div class="social-icons">
+      <div class="social-icons" data-aos="fade-down">
         <span>
           <i class="fab fa-facebook"></i>
         </span>
@@ -103,26 +105,26 @@
       </div>
     </section>
     <section id="design" class="container gray">
-      <div class="design-title">
+      <div class="design-title" data-aos="zoom-in-up">
         <h2>selected designs</h2>
         <p>Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.</p>
       </div>
       <div class="design-cards">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <img src="images/donats.jpg" alt="" />
         </div>
-        <div class="card">
+        <div class="card"   data-aos="fade-up" data-aos-delay="200">
           <img src="images/cactus.jpg" alt="" />
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
           <img src="images/cup.jpg" alt="" />
         </div>
       </div>
     </section>
     <section id="form" class="container">
       <div class="wrapper-form">
-        <div class="getting-in-touch">
-          <div class="form-title">
+        <div class="getting-in-touch" data-aos="fade-right">
+          <div class="form-title" >
             <h2>Get in touch</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </div>
@@ -142,7 +144,7 @@
             <input type="submit" value="Send Message" />
           </form>
         </div>
-        <div class="contact">
+        <div class="contact" data-aos="fade-left">
           <div class="contact-title">
             <h2>Contact info</h2>
             <p>
@@ -169,10 +171,10 @@
     </section>
     <footer id="footer">
      <div class="container">
-       <p class="white-color">
+       <p class="white-color" data-aos="fade-up">
          Copyright © 2017 Your Company | Design: Tooplate
        </p>
-      <div class="footer-social-icons">
+      <div class="footer-social-icons" data-aos="fade-up" data-aos-delay="100">
            <span>
              <i class="fab fa-facebook-f"></i>
            </span>
@@ -192,5 +194,9 @@
 
      </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
   </body>
 </html>

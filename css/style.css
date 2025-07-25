@@ -4,6 +4,10 @@
     box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 :root{
     --main-color : #979ee2;
@@ -335,7 +339,7 @@ footer#footer .social-icons {
   gap: 1rem;
 }
 footer#footer .footer-social-icons span i {
-  background: var(--icons-bg);
+  background-color: var(--icons-bg);
     border-radius: 100%;
     color: var(--icons-color);
     cursor: pointer;
